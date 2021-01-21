@@ -29,5 +29,9 @@ cy.getByLabel('First name:')
 cy.getFormField('First name:')
 ```
 
+## examples
+
+- [cypress-get-by-label-example](https://github.com/bahmutov/cypress-get-by-label-example)
+
 [ci image]: https://github.com/bahmutov/cypress-get-by-label/workflows/ci/badge.svg?branch=main
 [ci url]: https://github.com/bahmutov/cypress-get-by-label/actions
