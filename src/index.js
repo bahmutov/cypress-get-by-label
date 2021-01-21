@@ -1,8 +1,16 @@
-Cypress.Commands.add('getByLabel', (label) => {
-  cy.log('**getByLabel**')
-  cy.contains('label', label)
-    .invoke('attr', 'for')
-    .then((id) => {
-      cy.get('#' + id)
-    })
-})
+const registerCommand = (name = 'getByLabel') => {
+  const getByCommand = (label) => {
+    cy.log(`**${name}**`)
+    cy.contains('label', label)
+      .invoke('attr', 'for')
+      .then((id) => {
+        cy.get('#' + id)
+      })
+  }
+
+  Cypress.Commands.add(name, getByCommand)
+}
+
+module.exports = {
+  registerCommand,
+}

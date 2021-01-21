@@ -1,7 +1,10 @@
 // enables intelligent code completion for Cypress commands
 // https://on.cypress.io/intelligent-code-completion
 /// <reference types="cypress" />
-require('../..')
+const { registerCommand } = require('../..')
+registerCommand()
+// or we could register under a different name
+registerCommand('getFormField')
 
 describe('cypress-get-by-label', () => {
   it('find the elements', () => {
@@ -9,7 +12,8 @@ describe('cypress-get-by-label', () => {
     cy.visit('cypress/index.html')
     cy.getByLabel('First name:').should('have.value', '').type('Joe')
     cy.getByLabel('First name:').should('have.value', 'Joe')
-    cy.getByLabel('Last name:').type('Smith')
+    // try alternative command name
+    cy.getFormField('Last name:').type('Smith')
     // check the form inputs
     cy.get('form')
       .invoke('serializeArray')
