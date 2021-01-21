@@ -2,7 +2,10 @@
   "name": "cypress-get-by-label",
   "version": "1.0.0",
   "description": "Example custom Cypress command finding form element by its label",
-  "main": "index.js",
+  "main": "src",
+  "files": [
+    "src"
+  ],
   "scripts": {
     "test": "cypress run",
     "cy:open": "cypress open",
