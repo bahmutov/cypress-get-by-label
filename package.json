@@ -3,6 +3,7 @@
   "version": "0.0.0-development",
   "description": "Example custom Cypress command finding form element by its label",
   "main": "src",
+  "types": "src",
   "files": [
     "src"
   ],

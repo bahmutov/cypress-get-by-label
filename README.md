@@ -29,6 +29,18 @@ cy.getByLabel('First name:')
 cy.getFormField('First name:')
 ```
 
+## types
+
+To get IntelliSense working with the default custom command `cy.getByLabel` include in your specs
+
+```js
+/// <reference types="cypress-get-by-label" />
+```
+
+For example in VSCode you will see
+
+![IntelliSense](images/intellisense.png)
+
 ## examples
 
 - [cypress-get-by-label-example](https://github.com/bahmutov/cypress-get-by-label-example)
