@@ -14,13 +14,19 @@ yarn add -D cypress-get-by-label
 Include from your Cypress support file or individual spec
 
 ```js
-require('cypress-get-by-label')
+const { registerCommand } = require('cypress-get-by-label')
+registerCommand()
+// or we could register under a different name
+registerCommand('getFormField')
 ```
 
-Then use the command `cy.getByLabel`
+Then use the command `cy.getByLabel` (default) or the custom name
 
 ```js
+// if used registerCommand()
 cy.getByLabel('First name:')
+// if used registerCommand('getFormField')
+cy.getFormField('First name:')
 ```
 
 [ci image]: https://github.com/bahmutov/cypress-get-by-label/workflows/ci/badge.svg?branch=main
