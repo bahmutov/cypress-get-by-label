@@ -1,0 +1,27 @@
+{
+  "name": "cypress-get-by-label",
+  "version": "1.0.0",
+  "description": "Example custom Cypress command finding form element by its label",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/cypress-get-by-label.git"
+  },
+  "keywords": [
+    "cypress",
+    "cypress-custom-command"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/cypress-get-by-label/issues"
+  },
+  "homepage": "https://github.com/bahmutov/cypress-get-by-label#readme",
+  "devDependencies": {
+    "cypress": "6.3.0",
+    "prettier": "2.2.1"
+  }
+}
