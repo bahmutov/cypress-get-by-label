@@ -1,4 +1,4 @@
-# cypress-get-by-label [![ci status][ci image]][ci url]
+# cypress-get-by-label [![ci status][ci image]][ci url] [![renovate-app badge][renovate-badge]][renovate-app]
 > Example custom Cypress command finding form element by its label
 
 ## install
@@ -47,3 +47,5 @@ For example in VSCode you will see
 
 [ci image]: https://github.com/bahmutov/cypress-get-by-label/workflows/ci/badge.svg?branch=main
 [ci url]: https://github.com/bahmutov/cypress-get-by-label/actions
+[renovate-badge]: https://img.shields.io/badge/renovate-app-blue.svg
+[renovate-app]: https://renovateapp.com/
