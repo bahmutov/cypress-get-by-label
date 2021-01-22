@@ -1,6 +1,8 @@
 # cypress-get-by-label [![ci status][ci image]][ci url] [![renovate-app badge][renovate-badge]][renovate-app]
 > Example custom Cypress command finding form element by its label
 
+Read [How to Publish Custom Cypress Command on NPM](https://glebbahmutov.com/blog/publishing-cypress-command/)
+
 ## install
 
 ```
