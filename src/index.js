@@ -1,4 +1,4 @@
-const registerCommand = (name = 'getByLabel') => {
+export const registerCommand = (name = 'getByLabel') => {
   const getByCommand = (label) => {
     cy.log(`**${name}**`)
     cy.contains('label', label)
@@ -9,8 +9,4 @@ const registerCommand = (name = 'getByLabel') => {
   }
 
   Cypress.Commands.add(name, getByCommand)
-}
-
-module.exports = {
-  registerCommand,
 }
