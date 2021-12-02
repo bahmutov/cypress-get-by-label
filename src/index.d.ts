@@ -8,6 +8,6 @@ declare namespace Cypress {
      * @example
      *  cy.getByLabel('First name:').type('Joe')
      */
-    getByLabel(label: string): Chainable<Element>
+    getByLabel(label: string): Chainable<JQuery<Element>>
   }
 }

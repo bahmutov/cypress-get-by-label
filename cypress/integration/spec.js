@@ -1,4 +1,6 @@
+// @ts-check
 /// <reference path="../../src/index.d.ts" />
+// @ts-ignore
 const { registerCommand } = require('../..')
 registerCommand()
 // or we could register under a different name
@@ -9,8 +11,13 @@ describe('cypress-get-by-label', () => {
     // path with respect to the root folder
     cy.visit('cypress/index.html')
     cy.getByLabel('First name:').should('have.value', '').type('Joe')
-    cy.getByLabel('First name:').should('have.value', 'Joe')
-    // try alternative command name
+    cy.getByLabel('First name:')
+      .should('have.value', 'Joe')
+      .and('have.attr', 'name', 'fname')
+
+    // try alternative command name, since it is not in the index.d.ts
+    // TypeScript does not know about it
+    // @ts-ignore
     cy.getFormField('Last name:').type('Smith')
     // check the form inputs
     cy.get('form')
