@@ -1,4 +1,4 @@
-export const getByCommand = (name) => (label) => {
+const getByCommand = (name) => (label) => {
   cy.log(`**${name}**`)
   cy.contains('label', label)
     .invoke('attr', 'for')
@@ -6,3 +6,5 @@ export const getByCommand = (name) => (label) => {
       cy.get('#' + id)
     })
 }
+
+module.exports = { getByCommand }
