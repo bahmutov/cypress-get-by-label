@@ -14,6 +14,22 @@ yarn add -D cypress-get-by-label
 
 ## use
 
+### Simple
+
+Include from your Cypress support file or individual spec
+
+```js
+import 'cypress-get-by-label/commands'
+```
+
+Then use the custom command `cy.getByLabel`
+
+```js
+cy.getByLabel('First name:')
+```
+
+### Advanced
+
 Include from your Cypress support file or individual spec
 
 ```js
