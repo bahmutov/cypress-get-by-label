@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/bahmutov/cypress-get-by-label#readme",
   "devDependencies": {
-    "cypress": "11.2.0",
+    "cypress": "12.0.1",
     "prettier": "2.2.1",
     "semantic-release": "19.0.5"
   }
