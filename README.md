@@ -28,6 +28,20 @@ Then use the custom command `cy.getByLabel`
 cy.getByLabel('First name:')
 ```
 
+### Dual command
+
+The `cy.getByLabel` command is dual: you can use it as a parent to start new command chain or as a child command from an existing subject element.
+
+```js
+// find the label starting
+// from the beginning of the page
+cy.getByLabel('First name:').should('have.value', 'Joe')
+// limited to the fields inside the form with id "person"
+cy.get('form#person')
+  .getByLabel('First name:')
+  .should('have.value', 'Ann')
+```
+
 ### Advanced
 
 Include from your Cypress support file or individual spec

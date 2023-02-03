@@ -13,6 +13,6 @@ describe('cypress-get-by-label child command', () => {
     // limit ourselves to the second form
     cy.get('form#second')
       .getByLabel('First name:')
-      .should('have.value', 'Ann')
+      .should('have.value', 'Anna')
   })
 })
