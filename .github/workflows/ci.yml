@@ -10,9 +10,11 @@ jobs:
       # and run all Cypress tests
       # https://github.com/cypress-io/github-action
       - name: Cypress run
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v5
+
       - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@v2
+        uses: cycjimmy/semantic-release-action@v3
+        if: github.ref == 'refs/heads/main'
         id: semantic
         with:
           branch: main
