@@ -1,4 +1,4 @@
-const { getByCommand } = require('./src/get-by')
+const { registerCommand } = require('./src')
 
 // register a new custom command cy.getByLabel
-Cypress.Commands.add('getByLabel', getByCommand('getByLabel'))
+registerCommand ();
