@@ -1,4 +1,4 @@
-# cypress-get-by-label [![ci status][ci image]][ci url] [![renovate-app badge][renovate-badge]][renovate-app] ![cypress version](https://img.shields.io/badge/cypress-13.17.0-brightgreen)
+# cypress-get-by-label [![ci status][ci image]][ci url] [![renovate-app badge][renovate-badge]][renovate-app] ![cypress version](https://img.shields.io/badge/cypress-14.0.0-brightgreen)
 
 > Example custom Cypress command finding form element by its label
 
